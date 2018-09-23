@@ -12,9 +12,9 @@ Install with NPM: ``npm i buteforcejs``
     
 #### Syntax:
     bruteforce('characters [list or string]', (result) => {
-        // Do something with result
-        if(/**RESULT WAS RIGHT**/) return true //Finish the bruteforce
-     })
+      // Do something with result
+      if(/** RESULT WAS RIGHT **/) return true //Finish the bruteforce
+    }, 5) // (maxLength < 1 | maxLength = undefined) => until callback returns true (standard)
     
 #### Bruteforce until callback returns true (characters => string)
     bruteforce('ABCabc', (result) => {
