@@ -6,11 +6,20 @@
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.10.3",
-    "ava": "1.0.0-rc.2"
+    "ava": "1.0.0-rc.2",
+    "eslint": "^5.10.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.15.3",
+    "tslint": "^5.11.0",
+    "tslint-plugin-prettier": "^2.0.1"
   },
   "scripts": {
     "start": "node src/app.js",
-    "test": "ava --verbose"
+    "test": "ava --verbose",
+    "format": "./node_modules/.bin/prettier --write **/*",
+    "formatjs": "./node_modules/.bin/prettier --write **/*.js",
+    "formatts": "./node_modules/.bin/prettier --write **/*.ts",
+    "compile": "tsc && npm run formatjs"
   },
   "author": "MarvinJWendt",
   "license": "MIT",
