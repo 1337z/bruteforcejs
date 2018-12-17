@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.10.3",
-    "ava": "1.0.0-rc.2",
+    "ava": "1.0.1",
     "eslint": "^5.10.0",
     "eslint-plugin-prettier": "^3.0.0",
     "prettier": "^1.15.3",
