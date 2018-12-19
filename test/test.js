@@ -1,6 +1,6 @@
 import test from 'ava'
 
-const app = require('../src/index')
+const app = require('../src/index.js')
 
 test('Bruteforce until true is returned', t => {
   app('abc', result => {
