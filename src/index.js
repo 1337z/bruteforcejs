@@ -1,7 +1,8 @@
 'use strict'
 module.exports = function(characters, callback, maxLength = -1) {
   let i = 1
-  if (typeof characters == 'string') characters = characters.split('')
+  if (typeof characters == 'string') characters = characters.split('') //If input: typeof string => split into array
+  // Sort characters
   characters.sort()
   characters = characters.filter(function(value, index, arr) {
     if (index < 1) {
@@ -10,7 +11,7 @@ module.exports = function(characters, callback, maxLength = -1) {
       return value != arr[index - 1]
     }
   })
-  characters = [''].concat(characters)
+  characters = [''].concat(characters) // Cleanup
   function getBruteforceString(idx) {
     let charBasedString = ''
     let mod

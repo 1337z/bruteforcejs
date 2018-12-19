@@ -4,7 +4,7 @@
 
 ## :package: Install
 
-Install with NPM: `npm i buteforcejs`
+Install with NPM: `npm i bruteforcejs`
 
 ## :clipboard: Usage
 
@@ -55,7 +55,7 @@ Install with NPM: `npm i buteforcejs`
         }
      }, 5)
 
-----
+---
 
 > [Website](https://marvinjwendt.com) &nbsp;&middot;&nbsp;
 > GitHub [@MarvinJWendt](https://github.com/MarvinJWendt)

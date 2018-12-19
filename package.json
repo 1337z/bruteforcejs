@@ -2,7 +2,7 @@
   "name": "bruteforcejs",
   "version": "1.1.1",
   "description": "JavaScript bruteforce module.",
-  "main": "src/app.js",
+  "main": "src/index.js",
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.10.3",
@@ -16,16 +16,16 @@
   "scripts": {
     "start": "node src/app.js",
     "test": "ava --verbose",
-    "format": "./node_modules/.bin/prettier --write **/*",
-    "formatjs": "./node_modules/.bin/prettier --write **/*.js",
-    "formatts": "./node_modules/.bin/prettier --write **/*.ts",
+    "format": "prettier --write **/*",
+    "formatjs": "prettier --write **/*.js",
+    "formatts": "prettier --write **/*.ts",
     "compile": "tsc && npm run formatjs"
   },
   "author": "MarvinJWendt",
   "license": "MIT",
   "repository": {
     "type": "GIT",
-    "url": "https://github.com/MarvinJWendt/node-bruteforcejs"
+    "url": "git+https://github.com/1337z/bruteforcejs.git"
   },
   "keywords": [
     "bruteforce",
@@ -33,5 +33,9 @@
     "password",
     "guess",
     "hacking"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/1337z/bruteforcejs/issues"
+  },
+  "homepage": "https://github.com/1337z/bruteforcejs#readme"
 }
