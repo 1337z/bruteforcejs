@@ -83,7 +83,3 @@ bruteforce(
 
 > [Website](https://marvinjwendt.com) &nbsp;&middot;&nbsp;
 > GitHub [@MarvinJWendt](https://github.com/MarvinJWendt)
-
-```
-
-```
