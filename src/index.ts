@@ -1,7 +1,7 @@
 module.exports = (characters: string | string[], callback: any, maxLength: number = -1) => {
   let i: number = 1
 
-  if (typeof characters == "string") characters = characters.split("") //If input: typeof string => split into array
+  if (typeof characters == "string") characters = characters.split("") // If input: typeof string => split into array
 
   // Sort characters
   characters.sort()

@@ -2,7 +2,7 @@
 module.exports = (characters, callback, maxLength = -1) => {
     let i = 1;
     if (typeof characters == "string")
-        characters = characters.split(""); //If input: typeof string => split into array
+        characters = characters.split(""); // If input: typeof string => split into array
     // Sort characters
     characters.sort();
     characters = characters.filter(function (value, index, arr) {
