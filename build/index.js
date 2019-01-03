@@ -14,7 +14,7 @@ module.exports = (characters, callback, maxLength = -1) => {
         }
     });
     characters = [""].concat(characters); // Cleanup
-    function getBruteforceString(idx) {
+    const getBruteforceString = (idx) => {
         let charBasedString = "";
         let mod;
         while (idx > 0) {
@@ -23,7 +23,7 @@ module.exports = (characters, callback, maxLength = -1) => {
             idx = (idx - mod) / characters.length;
         }
         return charBasedString;
-    }
+    };
     while (i > 0) {
         let result = callback(getBruteforceString(i));
         if (result)

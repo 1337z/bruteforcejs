@@ -15,7 +15,7 @@ module.exports = (characters: string | string[], callback: any, maxLength: numbe
 
   characters = [""].concat(characters) // Cleanup
 
-  function getBruteforceString(idx: number) {
+  const getBruteforceString = (idx: number) => {
     let charBasedString = ""
     let mod
 
