@@ -16,11 +16,14 @@ const bruteforce = require("bruteforcejs")
 
 ### Syntax
 
+#### bruteforce(`characters [string|string[]]`, (result) => {})
+
+##### Example
 ```javascript
 bruteforce('characters [list or string]', (result) => {
   // Do something with result
-  if(/** RESULT WAS RIGHT **/) return true //Finish the bruteforce
-}, 5) // (maxLength < 1 | maxLength = undefined) => until callback returns true (standard)
+  if(result == "right") return true // Finish the bruteforce
+}, 5) // Maxlenght (if this is not set the bruteforce will continue until cancled)
 ```
 
 ### Bruteforce until callback returns true (characters => string)
