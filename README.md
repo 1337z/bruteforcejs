@@ -11,7 +11,7 @@ Install with NPM: `npm i bruteforcejs`
 ### Import
 
 ```javascript
-const bruteforce = require('bruteforcejs')
+const bruteforce = require("bruteforcejs")
 ```
 
 ### Syntax
@@ -26,9 +26,9 @@ bruteforce('characters [list or string]', (result) => {
 ### Bruteforce until callback returns true (characters => string)
 
 ```javascript
-bruteforce('ABCabc', result => {
+bruteforce("ABCabc", result => {
   console.log(result) // Display current bruteforce string
-  if (result == 'abBac') {
+  if (result == "abBac") {
     // If current bruteforce string is right
     return true // Return true => finish bruteforce
   }
@@ -38,9 +38,9 @@ bruteforce('ABCabc', result => {
 ### Bruteforce until callback returns true (characters => list)
 
 ```javascript
-bruteforce(['A', 'B', 'C', 'a', 'b', 'c'], result => {
+bruteforce(["A", "B", "C", "a", "b", "c"], result => {
   console.log(result) // Display current bruteforce string
-  if (result == 'abBac') {
+  if (result == "abBac") {
     // If current bruteforce string is right
     return true // Return true => finish bruteforce
   }
@@ -51,10 +51,10 @@ bruteforce(['A', 'B', 'C', 'a', 'b', 'c'], result => {
 
 ```javascript
 bruteforce(
-  'ABCabc',
+  "ABCabc",
   result => {
     console.log(result) // Display current bruteforce string
-    if (result == 'abBac') {
+    if (result == "abBac") {
       // If current bruteforce string is right
       return true // Return true => finish bruteforce
     }
@@ -67,10 +67,10 @@ bruteforce(
 
 ```javascript
 bruteforce(
-  ['A', 'B', 'C', 'a', 'b', 'c'],
+  ["A", "B", "C", "a", "b", "c"],
   result => {
     console.log(result) // Display current bruteforce string
-    if (result == 'abBac') {
+    if (result == "abBac") {
       // If current bruteforce string is right
       return true // Return true => finish bruteforce
     }
